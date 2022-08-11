@@ -1,37 +1,35 @@
-package javaapplication5;
+package javaapplication10;
 
 import javax.swing.JOptionPane;
 
 /**
  *
- * @author Samuel Peñaranda
+ * @author SALA
  */
-public class JavaApplication5 {
-
-    /**
-     * @param args the command line arguments
-     * 
-     */
-    static boolean primo (int numerop){
+public class JavaApplication10 {
+   static boolean primo (int numerop){
         int r, t, p;
         r=numerop%1;
         t=numerop%numerop;
         p=numerop%2;
         
         
-        if ((r==0&& || t==0)&& p!=0){
+        if ((r==0&&  t==0)&& p!=0){
             return true;
         }else{
             return false;
         }
     
     }
+    /**
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
-        String continuar="Si";
-        while(continuar=="Si");
+         char continuar='S';
+        while(continuar=='S');
         String entrada=JOptionPane.showInputDialog(null, "Ingrese el año");
         
-        int entrada=Integer.parseInt(entrada);
+        int numerop=Integer.parseInt(entrada);
         if(primo(numerop)==true){
             JOptionPane.showInputDialog(null, "El número es primo");
         }else{
@@ -41,4 +39,5 @@ public class JavaApplication5 {
         }
         // TODO code application logic here
     }
+        // TODO code application logic here
     
